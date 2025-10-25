@@ -1,4 +1,3 @@
-/* Reset CSS moderne */
 *,
 *::before,
 *::after {
@@ -19,13 +18,11 @@ body {
   line-height: 1.6;
 }
 
-/* Global links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -61,11 +58,16 @@ nav ul li a:hover {
   color: #38bdf8;
 }
 
-/* Menu toggle for mobile */
+/* Menu toggle */
 .menu-toggle {
-  display: none;
+  display: none; /* affiché seulement sur mobile via media query */
+  position: absolute; /* pour le positionner indépendamment */
+  top: 50%; /* centré verticalement par rapport au header */
+  right: 1rem; /* distance depuis le bord droit */
+  transform: translateY(-50%); /* ajuste le centrage vertical */
   flex-direction: column;
   cursor: pointer;
+  z-index: 200; /* au-dessus du menu */
 }
 
 .menu-toggle span {
@@ -76,6 +78,14 @@ nav ul li a:hover {
   border-radius: 2px;
   transition: 0.3s;
 }
+
+/* Affichage sur mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 
 /* Sections */
 section {
