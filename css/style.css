@@ -237,6 +237,8 @@ section {
 }
 .certificate-card:hover {
   transform: scale(1.05);
+  color: #2563eb;
+  font-weight: bold;
 }
 
 
