@@ -265,29 +265,41 @@
       <p>© 2025 Kabidu Munguakonkwa Sage. All rights reserved.</p>
     </footer>
     <script>
-      const navLinks = document.querySelectorAll("nav ul li a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          const target = document.querySelector(link.getAttribute("href"));
-          target.scrollIntoView({ behavior: "smooth" });
-        });
-      });
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navList = document.querySelector("nav ul");
+  const navLinks = document.querySelectorAll("nav ul li a");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navList = document.querySelector("nav ul");
 
-      menuToggle.addEventListener("click", () => {
-        navList.classList.toggle("active");
-        menuToggle.classList.toggle("open");
-      });
+  // Smooth scroll on link click
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      target.scrollIntoView({ behavior: "smooth" });
 
+      // Close menu on small screens
+      if (window.innerWidth <= 768) {
+        navList.classList.remove("active");
+        menuToggle.classList.remove("open");
 
-      menuToggle.addEventListener("click", () => {
         const spans = menuToggle.querySelectorAll("span");
-        spans[0].classList.toggle("rotate1");
-        spans[1].classList.toggle("hide");
-        spans[2].classList.toggle("rotate2");
-      });
-    </script>
+        spans[0].classList.remove("rotate1");
+        spans[1].classList.remove("hide");
+        spans[2].classList.remove("rotate2");
+      }
+    });
+  });
+
+  // Toggle menu on icon click
+  menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+
+    const spans = menuToggle.querySelectorAll("span");
+    spans[0].classList.toggle("rotate1");
+    spans[1].classList.toggle("hide");
+    spans[2].classList.toggle("rotate2");
+  });
+</script>
+
   </body>
 </html>
