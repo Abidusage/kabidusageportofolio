@@ -61,12 +61,12 @@ nav ul li a:hover {
 .menu-toggle {
   display: none;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   right: 1rem;
   transform: translateY(-50%);
   flex-direction: column;
   cursor: pointer;
-  z-index: 200; 
+  z-index: 200;
 }
 
 .menu-toggle span {
@@ -77,11 +77,13 @@ nav ul li a:hover {
   border-radius: 2px;
   transition: 0.3s;
 }
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
 }
+
 section {
   padding: 6rem 1rem 3rem 1rem;
 }
@@ -103,6 +105,7 @@ section {
   margin: 0.625rem auto 0;
   border-radius: 2px;
 }
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -163,6 +166,7 @@ section {
   background-color: #3b82f6;
   transform: translateY(-0.1875rem);
 }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -225,11 +229,13 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
 .certificate-card:hover {
   transform: scale(1.05);
   color: #2563eb;
   font-weight: bold;
 }
+
 #testimonials {
   text-align: center;
 }
@@ -259,7 +265,6 @@ section {
   color: #38bdf8;
   font-size: 0.875rem;
 }
-/* 🎯 SECTION CONTACT */
 .contact-section {
   text-align: center;
   padding: 5rem 1.5rem;
@@ -268,8 +273,6 @@ section {
   position: relative;
   overflow: hidden;
 }
-
-/* 🧭 TITRES */
 .section-title {
   font-size: 2.3rem;
   font-weight: 700;
@@ -287,8 +290,6 @@ section {
   margin-right: auto;
   line-height: 1.6;
 }
-
-/* 🧱 GRID */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -297,8 +298,6 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-/* 💎 CARTES */
 .contact-card {
   background: rgba(30, 41, 59, 0.85);
   backdrop-filter: blur(10px);
@@ -321,8 +320,6 @@ section {
   background: rgba(51, 65, 85, 0.95);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
 }
-
-/* 🌀 ICONES */
 .icon-box {
   width: 55px;
   height: 55px;
@@ -339,13 +336,25 @@ section {
 .contact-card:hover .icon-box {
   transform: rotate(10deg) scale(1.1);
 }
+.icon-box.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
 
-/* 🎨 Couleurs */
-.icon-box.whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
-.icon-box.email { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
-.icon-box.linkedin { background: linear-gradient(135deg, #0a66c2, #004182); }
-.icon-box.github { background: linear-gradient(135deg, #171515, #2d2d2d); }
-.icon-box.upwork { background: linear-gradient(135deg, #6fda44, #3dbb23); }
+.icon-box.email {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.icon-box.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+.icon-box.github {
+  background: linear-gradient(135deg, #171515, #2d2d2d);
+}
+
+.icon-box.upwork {
+  background: linear-gradient(135deg, #6fda44, #3dbb23);
+}
 
 .info h3 {
   font-size: 1.05rem;
@@ -358,8 +367,6 @@ section {
   color: #cbd5e1;
   word-break: break-word;
 }
-
-/* 💬 BOUTON WHATSAPP FLOTTANT */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -382,20 +389,17 @@ section {
   transform: scale(1.15) rotate(8deg);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
-
-/* 🌟 Animation d’apparition */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/* 📱 MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
@@ -445,6 +449,7 @@ section {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -457,6 +462,7 @@ section {
     flex-direction: column;
     text-align: center;
   }
+
   .icon-box {
     margin-bottom: 0.8rem;
   }
