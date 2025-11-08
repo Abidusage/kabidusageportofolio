@@ -510,17 +510,13 @@ footer {
     padding: 0.9375rem;
     border-radius: 0 0 0.75rem 0.75rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-
-    /* 👇 Animation fluide */
     transform: translateY(-20px);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.35s ease;
+    /* transition: all 0.35s ease; */
   }
-
-  /* ✅ Quand le menu est actif */
   nav ul.active {
-    display: flex; /* toujours présent */
+    display: flex; 
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
