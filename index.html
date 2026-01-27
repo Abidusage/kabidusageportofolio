@@ -9,6 +9,14 @@
   <meta name="keywords" content="Fullstack Developer, Kabidu Sage, React, Django, Portfolio" />
   <meta name="author" content="Kabidu Sage" />
   <link rel="icon" href="https://avatars.githubusercontent.com/Abidusage" type="image/png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <title>Fullstack Developer Portfolio - Kabidu Munguakonkwa Sage</title>
@@ -18,12 +26,6 @@
 <body>
   <header>
     <h1>Sage Kabidu</h1>
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -36,6 +38,11 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
   <section class="hero" id="home">
     <img src="https://avatars.githubusercontent.com/Abidusage" alt="Profile Picture" />
@@ -101,7 +108,7 @@
     <h2 class="section-title">My Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="CereaApp Project" />
+        <img src="assets/cereaapp.png" alt="CereaApp Project" />
         <div class="project-content">
           <h3>
             <a href="https://github.com/Abidusage/cereaapp" target="_blank" rel="noopener">CereaApp</a>
@@ -113,7 +120,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="GroupMe Project" />
+        <img src="assets/groupme.png" alt="GroupMe Project" />
         <div class="project-content">
           <h3>
             <a href="https://github.com/Abidusage/group-me" target="_blank" rel="noopener">Group-Me</a>
@@ -125,7 +132,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="App Project" />
+        <img src="assets/fullstack_app.png" alt="App Project" />
         <div class="project-content">
           <h3>
             <a href="https://github.com/Abidusage/App" target="_blank" rel="noopener">App</a>
@@ -154,43 +161,86 @@
   </section>
   <section id="certificates">
     <h2 class="section-title">Certificates</h2>
-    <div class="certificates">
-      <a href="https://www.mygreatlearning.com/certificate/PPRUUFPV?referrer_code=GLXQXMSGUDBHO" target="_blank"
-        class="certificate-card">
-        Python Foundations
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/8725117468" target="_blank"
-        class="certificate-card">
-        Mettrez en place une API avec Django REST Framework
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/5798041238" target="_blank"
-        class="certificate-card">
-        comprendre le web
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/8593508674" target="_blank"
-        class="certificate-card">
-       Créez votre site web avec HTML5 et CSS3
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/7451118855" target="_blank"
-        class="certificate-card">
-       Apprenez les bases du langage python
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/1911320137" target="_blank"
-        class="certificate-card">
-       Devenez un expert de Git et GitHub
-      </a>
+    <div class="certificates-grid">
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">Great Learning</span>
+          <h3>Python Foundations</h3>
+          <p class="cert-skills">Python, Algorithms</p>
+          <a href="https://www.mygreatlearning.com/certificate/PPRUUFPV?referrer_code=GLXQXMSGUDBHO" target="_blank"
+            class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
 
-      <a href="https://openclassrooms.com/fr/course-certificates/1250081245" target="_blank"
-        class="certificate-card">
-       Apprenez à programmer avec JavaScript
-      </a>
-      <a href="https://openclassrooms.com/fr/course-certificates/8057361463" target="_blank"
-        class="certificate-card">
-       Apprenez à apprendre
-      </a>
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>API avec Django REST</h3>
+          <p class="cert-skills">Django, REST API, Python</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/8725117468" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
 
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>Comprendre le web</h3>
+          <p class="cert-skills">Web Architecture, Protocols</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/5798041238" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
 
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>HTML5 & CSS3</h3>
+          <p class="cert-skills">HTML5, CSS3, Responsive Design</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/8593508674" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
 
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>Bases du langage python</h3>
+          <p class="cert-skills">Python Core, Logic</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/7451118855" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>Git et GitHub</h3>
+          <p class="cert-skills">Version Control, Collaboration</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/1911320137" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>JavaScript Foundations</h3>
+          <p class="cert-skills">ES6+, DOM Manipulation</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/1250081245" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="certificate-item">
+        <div class="cert-content">
+          <span class="cert-issuer">OpenClassrooms</span>
+          <h3>Apprenez à apprendre</h3>
+          <p class="cert-skills">Meta-learning, Productivity</p>
+          <a href="https://openclassrooms.com/fr/course-certificates/8057361463" target="_blank" class="cert-btn">View
+            Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -213,83 +263,84 @@
   </section>
 
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Get in Touch</h2>
-  <p class="section-subtitle">
-    Let's connect! Whether it's for a project, collaboration, or just to say hi.
-  </p>
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">
+      Let's connect! Whether it's for a project, collaboration, or just to say hi.
+    </p>
 
-  <div class="contact-grid">
+    <div class="contact-grid">
 
-    <a href="https://wa.me/243977598156?text=Bonjour%20Abidusage%2C%20je%20souhaite%20échanger%20avec%20toi%20!"
-       target="_blank" rel="noopener" class="contact-card">
-      <div class="icon-box whatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
-      <div class="info">
-        <h3>WhatsApp</h3>
-        <p>+243 977 598 156</p>
-      </div>
-    </a>
-
-
-    <a href="mailto:abidusage@gmail.com" class="contact-card">
-      <div class="icon-box email">
-        <i class="fa-solid fa-envelope"></i>
-      </div>
-      <div class="info">
-        <h3>Email</h3>
-        <p>abidusage@gmail.com</p>
-      </div>
-    </a>
+      <a href="https://wa.me/243977598156?text=Bonjour%20Abidusage%2C%20je%20souhaite%20échanger%20avec%20toi%20!"
+        target="_blank" rel="noopener" class="contact-card">
+        <div class="icon-box whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="info">
+          <h3>WhatsApp</h3>
+          <p>+243 977 598 156</p>
+        </div>
+      </a>
 
 
-    <a href="https://www.linkedin.com/in/kabidu-munguakonkwa-3033a7216" target="_blank" rel="noopener" class="contact-card">
-      <div class="icon-box linkedin">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </div>
-      <div class="info">
-        <h3>LinkedIn</h3>
-        <p>/kabidu-munguakonkwa</p>
-      </div>
-    </a>
+      <a href="mailto:abidusage@gmail.com" class="contact-card">
+        <div class="icon-box email">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <p>abidusage@gmail.com</p>
+        </div>
+      </a>
 
 
-    <a href="https://github.com/Abidusage" target="_blank" rel="noopener" class="contact-card">
-      <div class="icon-box github">
-        <i class="fa-brands fa-github"></i>
-      </div>
-      <div class="info">
-        <h3>GitHub</h3>
-        <p>@Abidusage</p>
-      </div>
-    </a>
+      <a href="https://www.linkedin.com/in/kabidu-munguakonkwa-3033a7216" target="_blank" rel="noopener"
+        class="contact-card">
+        <div class="icon-box linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="info">
+          <h3>LinkedIn</h3>
+          <p>/kabidu-munguakonkwa</p>
+        </div>
+      </a>
 
 
-    <a href="https://www.upwork.com/freelancers/~016241a9dbcc5b0887" target="_blank" rel="noopener" class="contact-card">
-      <div class="icon-box upwork">
-        <i class="fa-brands fa-upwork"></i>
-      </div>
-      <div class="info">
-        <h3>Upwork</h3>
-        <p>Freelancer Profile</p>
-      </div>
-    </a>
-  </div>
-</section>
+      <a href="https://github.com/Abidusage" target="_blank" rel="noopener" class="contact-card">
+        <div class="icon-box github">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="info">
+          <h3>GitHub</h3>
+          <p>@Abidusage</p>
+        </div>
+      </a>
 
 
-<a href="https://wa.me/243977598156?text=Bonjour%20Sagekabidu%2C%20je%20souhaite%20échanger%20avec%20toi%20!"
-   class="whatsapp-float" target="_blank" rel="noopener">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+      <a href="https://www.upwork.com/freelancers/~016241a9dbcc5b0887" target="_blank" rel="noopener"
+        class="contact-card">
+        <div class="icon-box upwork">
+          <i class="fa-brands fa-upwork"></i>
+        </div>
+        <div class="info">
+          <h3>Upwork</h3>
+          <p>Freelancer Profile</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
 
-<script src="https://kit.fontawesome.com/a2e0e6b6e2.js" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/a2e0e6b6e2.js" crossorigin="anonymous"></script>
+  <a href="https://wa.me/243977598156?text=Bonjour%20Sagekabidu%2C%20je%20souhaite%20échanger%20avec%20toi%20!"
+    class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <!-- Font Awesome (Handled in head) -->
 
   <footer>
-    <p>© 2025 Kabidu Munguakonkwa Sage. All rights reserved.</p>
+    <p>© 2026 Kabidu Munguakonkwa Sage. All rights reserved.</p>
   </footer>
   <script>
     const navLinks = document.querySelectorAll("nav ul li a");
@@ -324,6 +375,26 @@
       spans[0].classList.toggle("rotate1");
       spans[1].classList.toggle("hide");
       spans[2].classList.toggle("rotate2");
+    });
+
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .project-card, .skill-card, .contact-card').forEach(el => {
+      el.classList.add('hide-reveal');
+      observer.observe(el);
     });
   </script>
 
