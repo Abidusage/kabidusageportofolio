@@ -572,6 +572,29 @@ footer {
     font-size: 2.5rem;
   }
 
+  .hero {
+    padding: 100px 5% 40px 5%;
+  }
+
+  section {
+    padding: 4rem 5% 4rem 5%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
   .certificates-grid {
     grid-template-columns: 1fr;
   }
@@ -585,6 +608,26 @@ footer {
 
   .section-title {
     font-size: 2rem;
+  }
+
+  section {
+    padding: 3rem 5% 3rem 5%;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
   }
 }
 
@@ -605,5 +648,18 @@ footer {
   .hero-btn {
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
+  }
+
+  section {
+    padding: 2rem 5% 2rem 5%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-card img {
+    height: 150px;
   }
 }
