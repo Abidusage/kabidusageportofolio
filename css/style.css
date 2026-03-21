@@ -32,7 +32,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -87,7 +87,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 5%;
+  padding: 1.25rem 1%;
   background-color: var(--bg-header);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -156,9 +156,10 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 8rem 5% 4rem 5%;
+  padding: 2rem 2% 0.5rem 2%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .section-title {
@@ -270,6 +271,9 @@ section {
   overflow: hidden;
   border: 1px solid var(--glass-border);
   transition: var(--transition);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -287,6 +291,9 @@ section {
 
 .project-content {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-content h3 {
@@ -298,13 +305,15 @@ section {
 .project-content p {
   color: var(--text-secondary);
   line-height: 1.6;
+  flex: 1;
+
   font-size: 0.95rem;
 }
 
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
 }
